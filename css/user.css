@@ -1,0 +1,21 @@
+.form{
+    background-color: rgb(62, 130, 153);
+    
+}
+
+.main-form{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1em;
+}
+
+.input-container{
+    background-color: rgb(93, 157, 179);
+    text-align: center;
+    padding: 1em;
+    border-radius: 7px;
+    min-width: 20em;
+}

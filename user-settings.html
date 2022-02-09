@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>User</title>
+</head>
+
+<body>
+    <section class="form">
+        <form onsubmit="">
+            <div class="main-form">
+                <div class="input-container email">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required/>
+                </div>
+                <div class="input-container age">
+                    <label for="age">Age:</label>
+                    <input type="range" id="age" name="age" min="18" max="120" value="26" />
+                </div>
+                <div>colors-</div>
+                <div class="input-container bgc-color">
+                    <label for="bgcColor">Set Background Color</label>
+                    <input type="color" id="bgcColor" name="bgcColor">
+                </div>
+                <div class="input-container txt-color">
+                    <label for="txtColor">Set Text Color</label>
+                    <input type="color" id="txtColor" name="txtColor">
+                </div>
+                <div class="input-container dob">
+                    <label for="dob">Birth Date:</label>
+                    <input type="date" id="dob" name="dob" required/>
+                </div>
+                <div class="input-container birth-time">
+                    <label for="appt">Birth Time</label>
+                    <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                </div>
+                <input type="submit" value="Register"/>
+            </div>
+        </form>
+    </section>
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/user-service.js"></script>
+    <script src="js/placeKeeper-controller.js"></script>
+</body>
+
+</html>
