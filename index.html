@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Place Keeper</title>
 </head>
-<body>
+<body onload="onInit()">
     
     <header>
         <h1>welcome</h1>
@@ -15,11 +15,12 @@
     </header>
 
     <a href="user-settings.html">user settings</a>
+    <a href="map.html">map</a>
 
-    <script src="js/util-service.js"></script>
-    <script src="js/storage-service.js"></script>
-    <script src="js/user-service.js"></script>
-    <script src="js/placeKeeper-service.js"></script>
+    <script src="js/service/util-service.js"></script>
+    <script src="js/service/storage-service.js"></script>
+    <script src="js/service/user-service.js"></script>
+    <script src="js/service/place-service.js"></script>
     <script src="js/placeKeeper-controller.js"></script>
 </body>
 </html>

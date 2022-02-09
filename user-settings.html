@@ -10,9 +10,12 @@
     <title>User</title>
 </head>
 
-<body>
+<body onload="onInit()">
+
+    <a href="index.html">home</a>
+
     <section class="form">
-        <form onsubmit="">
+        <form onsubmit="onSubmit(event)">
             <div class="main-form">
                 <div class="input-container email">
                     <label for="email">E-mail:</label>
@@ -37,17 +40,18 @@
                 </div>
                 <div class="input-container birth-time">
                     <label for="appt">Birth Time</label>
-                    <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                    <input type="time" id="appt" name="appt" required>
                 </div>
                 <input type="submit" value="Register"/>
             </div>
         </form>
     </section>
 
-    <script src="js/util-service.js"></script>
-    <script src="js/storage-service.js"></script>
-    <script src="js/user-service.js"></script>
-    <script src="js/placeKeeper-controller.js"></script>
+    <script src="js/service/util-service.js"></script>
+    <script src="js/service/storage-service.js"></script>
+    <script src="js/service/user-service.js"></script>
+    <script src="js/user-controller.js"></script>
+    <script src="js/main-controller.js"></script>
 </body>
 
 </html>

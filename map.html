@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Map</title>
 </head>
-<body>
-    
+
+<body onload="onInit()">
+
+    <div class="map">
+    </div>
+    <img onclick="onCenterMap()" src="img/loc.png" alt="">
+
+    <script src="js/service/util-service.js"></script>
+    <script src="js/service/storage-service.js"></script>
+    <script src="js/service/place-service.js"></script>
+    <script src="js/map-controller.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcjgxa4YulB8E_cEZeBrg8DcteMlENx0c&callback=initMap">
+    </script>
 </body>
+
 </html>
